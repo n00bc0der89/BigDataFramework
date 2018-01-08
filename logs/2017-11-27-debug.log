@@ -1,0 +1,58 @@
+06:43:09 - info: Writing shellscript... 
+06:43:09 - info: Assigning permission to shellscript 
+06:43:09 - info: Calling Oozie Flow function 
+06:43:09 - info: Running Oozie Workflow
+06:43:11 - info: MoveFileToHadoop Function call start
+06:43:13 - info: File moved to HDFS
+06:43:13 - info: Removing Config files from local
+06:43:13 - info: MoveFileToHadoop Function call end
+06:43:13 - info: MoveScriptToHadoop Function call start
+06:43:15 - info: Script moved to HDFS
+06:43:15 - info: Removing Script file from local
+06:43:15 - info: MoveScriptToHadoop Function call end
+06:43:15 - info: SubmitOozieJob Function start
+06:43:16 - info: SubmitOozieJob Function end
+06:46:29 - info: Writing shellscript... 
+06:46:29 - info: Assigning permission to shellscript 
+06:46:29 - info: Calling Oozie Flow function 
+06:46:29 - info: Running Oozie Workflow
+06:46:31 - info: MoveFileToHadoop Function call start
+06:46:33 - info: File moved to HDFS
+06:46:33 - info: Removing Config files from local
+06:46:33 - info: MoveFileToHadoop Function call end
+06:46:33 - info: MoveScriptToHadoop Function call start
+06:46:35 - info: Script moved to HDFS
+06:46:35 - info: Removing Script file from local
+06:46:35 - info: MoveScriptToHadoop Function call end
+06:46:35 - info: SubmitOozieJob Function start
+06:46:36 - info: SubmitOozieJob Function end
+10:33:12 - info: MoveFileToHadoop Function call start
+10:33:14 - info: File moved to HDFS
+10:33:14 - info: Removing Config files from local
+10:33:14 - info: MoveFileToHadoop Function call end
+10:33:14 - info: SubmitOozieJob Function start
+10:33:14 - info: SubmitOozieJob Function end
+10:56:04 - info: MoveFileToHadoop Function call start
+10:56:07 - info: File moved to HDFS
+10:56:07 - info: Removing Config files from local
+10:56:07 - info: MoveFileToHadoop Function call end
+10:56:07 - info: SubmitOozieJob Function start
+10:56:07 - info: SubmitOozieJob Function end
+11:09:55 - info: MoveFileToHadoop Function call start
+11:09:57 - info: File moved to HDFS
+11:09:57 - info: Removing Config files from local
+11:09:57 - info: MoveFileToHadoop Function call end
+11:09:57 - info: SubmitOozieJob Function start
+11:09:58 - info: SubmitOozieJob Function end
+11:35:55 - info: MoveFileToHadoop Function call start
+11:35:57 - info: File moved to HDFS
+11:35:57 - info: Removing Config files from local
+11:35:57 - info: MoveFileToHadoop Function call end
+11:35:57 - info: SubmitOozieJob Function start
+11:35:58 - info: SubmitOozieJob Function end
+11:42:27 - info: MoveFileToHadoop Function call start
+11:42:30 - info: File moved to HDFS
+11:42:30 - info: Removing Config files from local
+11:42:30 - info: MoveFileToHadoop Function call end
+11:42:30 - info: SubmitOozieJob Function start
+11:42:30 - info: SubmitOozieJob Function end

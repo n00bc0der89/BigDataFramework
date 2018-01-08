@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Create Hive Schema</title>
+        <meta charset="utf-8" />
+        <script src="Scripts/jquery-3.1.1.min.js"></script>
+        <script src="Scripts/jquery.form.min.js"></script>
+    </head>
+     
+    <body>
+        <h1><center>Create Hive Schema</center> </h1>
+        
+        <form id="frmUploader" name="frmUploader" enctype="multipart/form-data" action="hiveSchemaLogic/" method="post">
+            
+            <h3>Details</h3>
+            
+            Type Of File:
+            <select name="inputFileType" id="inputFileType">
+              <option value="csv">Csv</option>
+              <option value="json">Json</option>
+              <option value="xml">Xml</option>
+            </select>
+            <br>
+            <br>
+            
+            Input File Location:
+            <input type="file" name="fileUploader" multiple />
+            <br>
+            <br>
+            
+	    HDFS Path:
+            <input name="hdfsPath" type="text" id="hdfsPath">
+            <br>
+            <br>
+
+            Store As Format:
+            <select name="storeAsFormat" id="storeAsFormat">
+              <option value="text">Text</option>
+              <option value="parquet">Parquet</option>
+              <option value="avro">Avro</option>
+            </select>
+            <br>
+            <br>
+            
+            Do you want to create hive table:
+            <select name="isCreateHiveTable" id="isCreateHiveTable">
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+            <br>
+            <br>
+            
+	    <!--
+            Hive Database Name:
+            <input name="hiveDatabase" type="text" id="hiveDatabase">
+            <br>
+            <br>
+	    -->
+            
+            Hive Table Name:
+            <input name="hiveTable" type="text" id="hiveTable">
+            <br>
+            <br>
+                  
+            <input type="submit" name="submit" id="btnSubmit" value="Create" />
+        </form>
+	<p id="status"><b><%= Response%></b></p>
+    </body>
+</html>
+
+<script>
+    $(document).ready(function () {
+        var options = {
+            beforeSubmit: showRequest,  // pre-submit callback
+            success: showResponse  // post-submit callback
+        };
+
+        // bind to the form's submit event
+        $('#frmUploader').submit(function () {
+            $(this).ajaxSubmit(options);
+            // always return false to prevent standard browser submit and page navigation
+            return false;
+        });
+    });
+
+    // pre-submit callback
+    function showRequest(formData, jqForm, options) {
+        alert('Uploading is starting.');
+        return true;
+    }
+
+    // post-submit callback
+    function showResponse(responseText, statusText, xhr, $form) {
+        alert('status: ' + statusText + '\n\nresponseText: \n' + responseText );
+    }
+</script>

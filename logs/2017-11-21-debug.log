@@ -1,0 +1,40 @@
+09:33:51 - info: Writing shellscript... 
+09:33:51 - info: Assigning permission to shellscript 
+09:33:51 - info: Calling Oozie Flow function 
+09:33:51 - info: Running Oozie Workflow
+09:33:53 - info: error occured : Error: Command failed: hadoop dfs -mkdir /user/mapr/bigdataframework/jobs/sftp_output_1511256831432
+DEPRECATED: Use of this script to execute hdfs command is deprecated.
+Instead use the hdfs command for it.
+
+mkdir: `/user/mapr/bigdataframework/jobs/sftp_output_1511256831432': No such file or directory
+
+10:01:16 - info: Writing shellscript... 
+10:01:16 - info: Assigning permission to shellscript 
+10:01:16 - info: Calling Oozie Flow function 
+10:01:16 - info: Running Oozie Workflow
+10:01:18 - info: error occured : Error: Command failed: hadoop dfs -mkdir /user/mapr/bigdataframework/jobs/sftp_output_1511258476732
+DEPRECATED: Use of this script to execute hdfs command is deprecated.
+Instead use the hdfs command for it.
+
+mkdir: `/user/mapr/bigdataframework/jobs/sftp_output_1511258476732': No such file or directory
+
+10:41:45 - info: Writing shellscript... 
+10:41:45 - info: Assigning permission to shellscript 
+10:41:45 - info: Calling Oozie Flow function 
+10:41:45 - info: Running Oozie Workflow
+10:41:47 - info: error occured : Error: Command failed: hadoop dfs -mkdir /user/mapr/bigdataframework/jobs/sftp_output_1511260905707
+DEPRECATED: Use of this script to execute hdfs command is deprecated.
+Instead use the hdfs command for it.
+
+mkdir: `/user/mapr/bigdataframework/jobs/sftp_output_1511260905707': No such file or directory
+
+12:46:09 - info: Writing shellscript... 
+12:46:09 - info: Assigning permission to shellscript 
+12:46:09 - info: Calling Oozie Flow function 
+12:46:09 - info: Running Oozie Workflow
+12:46:12 - info: error occured : Error: Command failed: hadoop dfs -mkdir /user/mapr/bigdataframework/jobs/sftp_output_1511268369975
+DEPRECATED: Use of this script to execute hdfs command is deprecated.
+Instead use the hdfs command for it.
+
+mkdir: `/user/mapr/bigdataframework/jobs/sftp_output_1511268369975': No such file or directory
+

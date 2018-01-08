@@ -1,0 +1,30 @@
+11:02:11 - info: MoveFileToHadoop Function call start
+11:02:13 - info: File moved to HDFS
+11:02:13 - info: Removing Config files from local
+11:02:13 - info: MoveFileToHadoop Function call end
+11:02:13 - info: SubmitOozieJob Function start
+11:02:14 - info: SubmitOozieJob Function end
+11:09:15 - info: MoveFileToHadoop Function call start
+11:09:17 - info: File moved to HDFS
+11:09:17 - info: Removing Config files from local
+11:09:17 - info: MoveFileToHadoop Function call end
+11:09:17 - info: SubmitOozieJob Function start
+11:09:17 - info: SubmitOozieJob Function end
+11:09:54 - info: MoveFileToHadoop Function call start
+11:09:56 - info: File moved to HDFS
+11:09:56 - info: Removing Config files from local
+11:09:56 - info: MoveFileToHadoop Function call end
+11:09:56 - info: SubmitOozieJob Function start
+11:09:56 - info: SubmitOozieJob Function end
+11:44:43 - info: MoveFileToHadoop Function call start
+11:44:45 - info: File moved to HDFS
+11:44:45 - info: Removing Config files from local
+11:44:45 - info: MoveFileToHadoop Function call end
+11:44:45 - info: SubmitOozieJob Function start
+11:44:46 - info: SubmitOozieJob Function end
+11:48:54 - info: MoveFileToHadoop Function call start
+11:48:56 - info: File moved to HDFS
+11:48:56 - info: Removing Config files from local
+11:48:56 - info: MoveFileToHadoop Function call end
+11:48:56 - info: SubmitOozieJob Function start
+11:48:56 - info: SubmitOozieJob Function end
