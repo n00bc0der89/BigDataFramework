@@ -200,6 +200,12 @@ module.exports = function(app) {
 	twitterstreaming.createTwitterProperties(obj);
 	twitterstreaming.createConfProperties(obj);
 
+	let command = "java -cp " + __dirname + '/resources/twitterStreaming/TwitterMapRDemo-0.0.1-SNAPSHOT-jar-with-dependencies.jar com.mastek.TwitterUtils.TwitterStreaming';
+	console.log('command -> ', command);
+	
+	exec(command, function(error, stdout, stderr) {
+		var data = {"Response" : "Twitter Streaming started ... " };
+	});
 
 	logger.info("Twitter Streaming End");
 
