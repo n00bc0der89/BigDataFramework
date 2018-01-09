@@ -49,6 +49,11 @@ conf_properties = metabroker + p_consKey + p_consSecret + p_accToken + p_secaccT
 				 p_keyser +  p_valser + p_tname1 + p_tname2 + p_twitterfilter;
 
 console.log(conf_properties);
+
+let dirn = path.resolve(__dirname, '..');
+console.log("Folder : " + dirn);
+
+
 fs.writeFileSync(dirn + config.conf_properties_filepath , conf_properties, {encoding:'utf8',flag:'w'});
 
 }
