@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script type = "text/javascript" src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+</script>
+<title>Twitter Stream</title>
+</head>
+<script>
+</script> 
+<body>
+<h1><center> Streaming Twitter data</center> </h1>
+<p id="status" style="text-align: center;font-weight: bold;"><b></b></p>
+
+<div><p> Note : Components used for realtime streaming  :  Kafka - Flume HDFS Ingestion </p></div>
+<table>
+<tr><th>Detail</th><th></th></tr>
+<tr>
+<td> Provide Twitter consumer key : </td>
+<td><input type="text" name="consumerkey" id="consumerkey" /></td>
+</tr>
+<tr>
+<td>Provide Twitter consumer secret : </td>
+<td><input type="text" name="secretkey" id="secretkey"/></td>
+</tr>
+<tr>
+<td>Provide Access Token : </td>
+<td><input type="text" name="accesstoken" id="accesstoken"/></td>
+</tr>
+<tr>
+<td>Provide Access Token Secret:</td>
+<td><input type="text" name="accesstokensecret" id="accesstokensecret"/></td>
+</tr>
+<tr>
+<td>Provide keyword to search for in Twitter Stream :</td>
+<td><input type="text" name="keyword" id="keyword"/></td>
+</tr>
+</table>
+
+<input type="button" value="Start Streaming" id="str_stream" />
+
+</body>
+</html>
+
+<script type="text/javascript">
+	
+	$("#str_stream").click(function(){
+	$("#status").text("");
+        var c_key = $("#consumerkey").val();
+        var s_key = $("#secretkey").val();
+        var a_token = $("#accesstoken").val();
+        var as_token = $("#accesstokensecret").val();
+        var kw  = $("#keyword").val();
+        
+		  $.ajax(
+            {
+                url: "TwitterStreamLogic",
+                type:"post",
+               data: { c_key: c_key, s_key : s_key, a_token: a_token, as_token : as_token, kw : kw } ,
+                success: function(result){
+                $("#status").text(result.Response);
+        }});
+
+	});
+</script>

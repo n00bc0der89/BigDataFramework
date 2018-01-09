@@ -32,5 +32,8 @@ module.exports = {
   "mysqlHost":"",
   "mysqlPort" : 3306,
   "mysqlUser":"",
-  "mysqlPassword":""
+  "mysqlPassword":"",
+
+  "twitter_properties_filepath" : "/resources/twitterStreaming/twitter4j.properties",
+  "conf_properties_filepath" : "/resources/twitterStreaming/conf.properties"  
 };
