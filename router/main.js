@@ -7,6 +7,7 @@ let filepath = "";
 const logger = require('../logs/log.js');
 const config = require('../config.js');
 let multer = require('multer');
+let twitterstreaming = require('./twitterStreaming');
 
 let Storage = multer.diskStorage({
 	destination: function(req, file, callback) {
@@ -172,4 +173,37 @@ module.exports = function(app) {
 		var data = { "Response": status }
 		res.send(data);
 	});
+
+
+	app.get("/twitterstream",function(req,res){
+
+			res.render("twitterstream");
+
+	});
+
+	app.post("/TwitterStreamLogic",function(req,res){
+	console.log("inside logic")
+	logger.info("Twitter Streaming Started");
+
+	// Set Property files for streaming
+	let consumer_key = req.body.c_key;
+	let secret_key = req.body.s_key;
+	let access_token = req.body.a_token;
+	let secret_access_token = req.body.as_token;
+	let keyword = req.body.kw;
+
+	let obj = {  "consumer_key" : consumer_key , "secret_key" : secret_key, "access_token" : access_token , "secret_access_token" : secret_access_token,
+	"keyword" : keyword}
+
+	//Create twitter properties.
+	console.log(obj);
+	twitterstreaming.createTwitterProperties(obj);
+	twitterstreaming.createConfProperties(obj);
+
+
+	logger.info("Twitter Streaming End");
+
+	});
+
+
 }
