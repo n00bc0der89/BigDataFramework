@@ -32,8 +32,8 @@ module.exports.createConfProperties = function(obj){
 
 let conf_properties ="";
 let nl = "\n"
-let metabroker = "metadata.broker.list=localhost:9092" + nl;
-let p_consKey =  "bootstrap.servers=localhost:9092" + nl;
+let metabroker = "metadata.broker.list=172.31.17.159:9092" + nl;
+let p_consKey =  "bootstrap.servers=172.31.17.159:9092" + nl;
 let p_consSecret = "acks=all" + nl;
 let p_accToken =  "retries=0" + nl;
 let p_secaccToken = "batch.size=16384" + nl;
