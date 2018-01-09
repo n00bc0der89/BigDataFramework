@@ -38,7 +38,7 @@ let p_consSecret = "acks=all" + nl;
 let p_accToken =  "retries=0" + nl;
 let p_secaccToken = "batch.size=16384" + nl;
 let p_linger = "linger.ms=1"+ nl;
-let p_buffer = "buffer.memory=33554432";
+let p_buffer = "buffer.memory=33554432" + nl;
 let p_keyser = "key.serializer=org.apache.kafka.common.serialization.StringSerializer" + nl;
 let p_valser = "value.serializer=org.apache.kafka.common.serialization.StringSerializer" + nl;
 let p_tname1 = "topicname1=twitter-data" + nl;
